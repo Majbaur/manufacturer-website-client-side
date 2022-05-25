@@ -1,0 +1,12 @@
+.deliver-btn:hover
+{
+    background-color: #827397;
+}
+.deliver-btn
+{
+    background-color: #E9D5DA;
+    color: #fff;
+    border: 2px solid transparent;
+    padding:0.7em 3em; 
+    border-radius:0.4em;
+}
