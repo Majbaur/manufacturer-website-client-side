@@ -14,6 +14,9 @@ import Management from './Components/Management/Management/Management.js';
 import AddProduct from './Components/Management/AddProducts/AddProduct';
 import Blog from './Components/Blog/Blog';
 import DashBoard from './DashBoard/DashBoard';
+import MyOrders from './Components/MyOrders/MyOrders';
+import MyReview from './Components/MyReview/MyReview';
+import MyProfile from './Components/MyProfile/MyProfile';
 
 function App() {
   return (
@@ -30,7 +33,6 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/manageInventories' element={<Management></Management>}></Route>
-        <Route path='/dashboard' element={<DashBoard></DashBoard>}></Route>
         <Route path='/addItem' element={<AddProduct></AddProduct>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/myitems" element={
@@ -39,6 +41,11 @@ function App() {
             </MyItems>
           </RequireAuth>
         }></Route>
+        <Route path="dashboard" element={<RequireAuth><DashBoard /></RequireAuth>} >
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path="review" element={<MyReview></MyReview>}></Route>
+          <Route path="profile" element={<MyProfile></MyProfile>}></Route>
+        </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
