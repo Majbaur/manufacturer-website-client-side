@@ -15,6 +15,8 @@ const Header = () =>
     const handleSignout =() =>
     {
         signOut(auth);
+        localStorage.removeItem('accessToken');
+        
     }
 
     const dashboardLink = <Nav.Link style={{color:'black'}} as={Link} to='/dashboard'>Dash Board</Nav.Link>

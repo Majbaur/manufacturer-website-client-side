@@ -41,7 +41,7 @@ const AddProduct = () => {
                 <input className='mb-2' placeholder='Supplier' {...register("Supplier", { required: true})} />
                 <input className='mb-2' placeholder='sale' type="number" {...register("sale")} />
                 <input className='mb-2' placeholder='Quantity' type="number" {...register("Quantity")} />
-                <input  type="submit" value="Add Service" />
+                <input  type="submit" value="Add product" />
             </form>
         </div>
     );

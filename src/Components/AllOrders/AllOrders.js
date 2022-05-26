@@ -1,22 +1,21 @@
-
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
-const MyOrders = () => {
-    const [myorders, setMyorders] = useState([]);
+const AllOrders = () => {
+    const [allorders, setAllOrders] = useState([]);
     const [user] = useAuthState(auth);
 
     useEffect(() => {
         if (user) {
-            fetch('http://localhost:5000/myorder')
+            fetch('http://localhost:5000/order')
                 .then(res => res.json())
-                .then(data => setMyorders(data));
+                .then(data => setAllOrders(data));
         }
     }, [user])
     return (
         <div>
-            This is My Orders: {myorders.length}
+            This is AllOrders: {allorders.length}
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <thead>
@@ -29,7 +28,7 @@ const MyOrders = () => {
                     </thead>
                     <tbody>
                         {
-                            myorders.map((a, index) =><tr>
+                            allorders.map((a, index) =><tr>
                                 <th>{index + 1}</th>
                                 <td>{a.name}</td>
                                 <td>{a.email}</td>
@@ -45,6 +44,6 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default AllOrders;
 
 

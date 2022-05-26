@@ -6,7 +6,6 @@ import Loading from './../Loading/Loading';
 import auth from './../../firebase.init';
 import useTOkenuser from '../../Hooks/useTOkenuser.js';
 
-
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();

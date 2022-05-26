@@ -17,6 +17,8 @@ import SignUp from './Components/Login/SignUp';
 import RequireAuth from './Components/Login/RequireAuth';
 import Checkout from './Components/Checkout/Checkout/Checkout';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
+import AllOrders from './Components/AllOrders/AllOrders';
+import Users from './DashBoard/Users.js';
 
 function App() {
   return (
@@ -36,11 +38,13 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>}></Route>
        
         <Route path="dashboard" element={<RequireAuth><DashBoard /></RequireAuth>} >
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route index element={<AllOrders></AllOrders>}></Route>
+          <Route path="myorder" element={<MyOrders></MyOrders>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="profile" element={<MyProfile></MyProfile>}></Route>
           <Route path="manageInventories" element={<Management></Management>}></Route>
           <Route path="addItem" element={<AddProduct></AddProduct>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
         </Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
