@@ -4,12 +4,12 @@ import './Services.css';
 
 const Services = () => {
 
-    const [services, setServices] = useState([]);
+    const [inventorys, setInventorys] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/service')
+        fetch('http://localhost:5000/items')
         .then(res => res.json())
-        .then(data => setServices(data));
+        .then(data => setInventorys(data));
     }, [])
 
     return (
@@ -18,9 +18,9 @@ const Services = () => {
             <h1 className='text-primary text-center mt-5'> Our Services</h1>
             <div className="services-container">
             {
-                services.map(service => <Service
-                    key={service._id}
-                    service={service}
+                inventorys.map(inventory => <Service
+                    key={inventory._id}
+                    inventory={inventory}
                 >
                 </Service>)
             }

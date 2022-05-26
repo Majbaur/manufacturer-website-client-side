@@ -34,12 +34,8 @@ const MyProfile = () => {
                 <img className='h-12 w-12' src={user?.photoURL} alt="" />
                 <input className='w-100 mb-2' type="text"  value={user?.displayName} name="userName" placeholder='useName'{...register("displayName")}/>        
                 <input className='mb-2' placeholder='email' value={user?.email} name="email" {...register("email", { required: true})} />
-                <input className='w-100 mb-2' type="text"  name="productname" placeholder='Product Name'{...register("name")}/>
-                <input className='mb-2' placeholder='Price' name="price"  type="number" {...register("price")} />
-                <textarea className='mb-2' placeholder='Description' {...register("description")} />
-                <input className='mb-2' placeholder='Supplier' {...register("Supplier", { required: true})} />
-                <input className='mb-2' placeholder='sale' type="number" {...register("sale")} />
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("Quantity")} />
+                <input className='mb-2' placeholder='phoneNumber' type="number" {...register("phoneNumber")} />
+                <input className='mb-2' placeholder='Address' type="text" {...register("Address")} />
                 <input  type="submit" value="Add Service" />
             </form>
         </div>

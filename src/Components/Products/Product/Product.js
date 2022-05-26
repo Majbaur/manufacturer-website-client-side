@@ -1,43 +1,68 @@
-import React from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
-import auth from '../../../firebase.init';
-import "./Product.css"
-const Product = (props) => {
+// import React from 'react';
+// import { useNavigate } from 'react-router-dom';
 
-    const { product } = props;
-    const { _id, name, img , description , Quantity , Supplier , price } = product;
+// const Product = ({item}) => {
+//     const {_id, name, img, description, price} = item;
+//     const navigate = useNavigate();
 
-    const navigate = useNavigate();
+//     const navigateToServiceDetail = id =>{
+//         navigate(`/service/${id}`);
+//     }
+//     return (
+//         <div className='service'>
+//             <img className='w-100' src={img} alt="" />
+//             <h2>{name}</h2>
+//             <p>Price: {price}</p>
+//             <p><small>{description}</small></p>
+//             <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-primary'>Book: {name}</button>
+//         </div>
+//     );
+// };
 
-    const [user] = useAuthState(auth)
+// export default Product;
 
-    const toManagement = (id) =>
-    {
-        user ? navigate(`inventory/${id}`) : navigate('/login'); 
+
+
+// // import React from 'react';
+// // import { useAuthState } from 'react-firebase-hooks/auth';
+// // import { useNavigate } from 'react-router-dom';
+// // import auth from '../../../firebase.init';
+// // import "./Product.css"
+// // const Product = (props) => {
+
+// //     const { product } = props;
+// //     const { _id, name, img , description , Quantity , Supplier , price } = product;
+
+// //     const navigate = useNavigate();
+
+// //     const [user] = useAuthState(auth)
+
+// //     const toManagement = (id) =>
+// //     {
+// //         user ? navigate(`inventory/${id}`) : navigate('/login'); 
         
-    }
-    return (
-        <article>
-            <div data-aos="fade-up" className="col ">
-                <div className="card h-100 cardImage border-start-0 border-bottom-0 border-top-0 p-3 border-end-3">
-                    <div className='round-img mx-auto'>
-                        <img src={img} className="card-img-top w-100" alt="..." />
-                    </div>
-                    <div className="card-body">
-                        <h2 className="card-title">{name}</h2>
-                        <p>{description}</p>
-                        <p>Price : {price}</p>
-                        <p>In stock : {Quantity}</p>
-                        <p>Supplier : {Supplier}</p>
-                        <button className='inv-btn rounded' onClick={()=>toManagement(_id)}>Update Stocking</button>
+// //     }
+// //     return (
+// //         <article>
+// //             <div data-aos="fade-up" className="col ">
+// //                 <div className="card h-100 cardImage border-start-0 border-bottom-0 border-top-0 p-3 border-end-3">
+// //                     <div className='round-img mx-auto'>
+// //                         <img src={img} className="card-img-top w-100" alt="..." />
+// //                     </div>
+// //                     <div className="card-body">
+// //                         <h2 className="card-title">{name}</h2>
+// //                         <p>{description}</p>
+// //                         <p>Price : {price}</p>
+// //                         <p>In stock : {Quantity}</p>
+// //                         <p>Supplier : {Supplier}</p>
+// //                         <button className='inv-btn rounded' onClick={()=>toManagement(_id)}>Update Stocking</button>
 
-                    </div>
-                </div>
-            </div>
+// //                     </div>
+// //                 </div>
+// //             </div>
 
-        </article>
-    );
-};
+// //         </article>
+// //     );
+// // };
 
-export default Product;
+// // export default Product;

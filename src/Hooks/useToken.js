@@ -6,13 +6,25 @@ const useToken = user => {
     useEffect(() => {
         const getToken = async () => {
             const email = user?.user?.email;
+            const currentUser = {email: email};
             if (email) {
-                const { data } = await axios.post('https://http://localhost:5000/login', { email });
-                setToken(data.accessToken);
-                localStorage.setItem('accessToken', data.accessToken);
+                const { data } = await axios.post(`http://localhost:5000/login/${ email }`, {
+                    method: 'PUT',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(currentUser)
+
+                })
+                .then(res => res.json())
+                .then(data =>{
+                    console.log('Data inside useToken',data);
+                })
+                // setToken(data.accessToken);
+                // localStorage.setItem('accessToken', data.accessToken);
             }
         }
-        getToken();
+        // getToken();
     }, [user]);
     return [token];
 }
