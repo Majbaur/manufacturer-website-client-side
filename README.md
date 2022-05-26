@@ -1,5 +1,5 @@
 # computer-parts-house
-## My Live Website Link: [Website Lnk](https://computer-parts-house.web.app/)
+## My Live Website Link: [Website Link](https://computer-parts-house.web.app/)
 ### Something about my Website
 * We work on frontend and backend too in this website.
 * In the frontend we use Bootstrap, CSS, and HTML.
