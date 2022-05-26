@@ -13,8 +13,8 @@ const Order = () => {
         
         const getOrders = async() =>{
             const email = user?.email;
-            //const url = `http://localhost:5000/service?email=${email}`;
-            const url = `http://localhost:5000/order?email=${email}`;
+            //const url = `https://shrouded-brushlands-76339.herokuapp.com/service?email=${email}`;
+            const url = `https://shrouded-brushlands-76339.herokuapp.com/order?email=${email}`;
             try{
                 const {data} = await axiosPrivate.get(url);
                 setOrders(data);

@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Loading from '../Components/Loading/Loading.js';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user'
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://shrouded-brushlands-76339.herokuapp.com/user'
     // , 
     // {
         // method: 'GET',

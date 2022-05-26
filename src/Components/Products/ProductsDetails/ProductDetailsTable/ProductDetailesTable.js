@@ -18,7 +18,7 @@ const ProductDetailesTable = (props) =>
         const onSubmit = data => {
             
         console.log(data);
-        const url = `http://localhost:5000/addedItem`;
+        const url = `https://shrouded-brushlands-76339.herokuapp.com/addedItem`;
         fetch(url, {
             method: 'POST',
             headers: {

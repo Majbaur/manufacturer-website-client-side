@@ -9,7 +9,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch('http://localhost:5000/myorder')
+            fetch('https://shrouded-brushlands-76339.herokuapp.com/myorder')
                 .then(res => res.json())
                 .then(data => setMyorders(data));
         }

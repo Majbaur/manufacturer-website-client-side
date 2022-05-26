@@ -8,7 +8,7 @@ const useToken = user => {
             const email = user?.user?.email;
             const currentUser = {email: email};
             if (email) {
-                const { data } = await axios.post(`http://localhost:5000/login/${ email }`, {
+                const { data } = await axios.post(`https://shrouded-brushlands-76339.herokuapp.com/login/${ email }`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

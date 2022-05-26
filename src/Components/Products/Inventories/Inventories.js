@@ -6,7 +6,7 @@
 //     const [inventorys, setInventorys] = useState([]);
 
 //     useEffect( ()=>{
-//         fetch(`http://localhost:5000/items?page=${page}&size=${size}`)
+//         fetch(`https://shrouded-brushlands-76339.herokuapp.com/items?page=${page}&size=${size}`)
 //         .then(res => res.json())
 //         .then(data => setInventorys(data));
 //     }, [])

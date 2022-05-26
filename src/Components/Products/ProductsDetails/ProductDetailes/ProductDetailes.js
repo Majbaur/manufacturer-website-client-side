@@ -12,7 +12,7 @@ const ProductDetailes = () => {
     const [item, setItem] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${id}`;
+        const url = `https://shrouded-brushlands-76339.herokuapp.com/item/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -47,7 +47,7 @@ const ProductDetailes = () => {
 
     async function handleItemRestock(item)
     {
-        const url = `http://localhost:5000/delivered/${id}`;
+        const url = `https://shrouded-brushlands-76339.herokuapp.com/delivered/${id}`;
         fetch(url , {
             method : "PUT",
             headers:
@@ -66,7 +66,7 @@ const ProductDetailes = () => {
     // const handleItemDelivered = (item) =>
     // {
         
-    //     const url = `http://localhost:5000/delivered/${id}`;
+    //     const url = `https://shrouded-brushlands-76339.herokuapp.com/delivered/${id}`;
     //     fetch(url , {
     //         method : "PUT",
     //         headers:
