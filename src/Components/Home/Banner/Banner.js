@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
 
-import banner1 from '../../../images/BMW 8.jpg';
-import banner2 from '../../../images/BMW 8.jpg';
-import banner3 from '../../../images/BMW 8.jpg';
-import banner4 from '../../../images/BMW 8.jpg';
+import banner1 from '../../../images/DISPLSY.jpg';
+import banner2 from '../../../images/HDD.jpg';
+import banner3 from '../../../images/RAM.jpg';
 
 
 
@@ -50,18 +49,7 @@ const Banner = () => {
                     <p>For the best car at the best price, choose the best one with DREAMS VEHICLE.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 h-25 "
-                    src={banner4}
-                    alt="Second slide"
-                />
-
-                <Carousel.Caption className="text-dark">
-                    <h3>Best friend as a good time.</h3>
-                    <p>If you think about your dream car,  we help to build it.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+            
            
         </Carousel>
     );
