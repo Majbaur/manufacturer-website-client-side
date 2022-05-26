@@ -1,0 +1,69 @@
+[
+    {
+
+        "name": "RAM",
+        "price": "$3000",
+        "description": "Random-access memory (RAM) is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code",
+        "img": "https://i.insider.com/604fc6c2fe6a340019aceca3?width=1000&format=jpeg&auto=webp",
+        "Quantity":"15",
+        "Supplier":"Malhotra Das",
+        "sale": 0,
+        "Minimun-Order":10
+    },
+    
+    {
+        
+        "name": "HDD",
+        "price": "$1500",
+        "description": "A hard disk drive (HDD), hard disk, hard drive, or fixed disk[b] is an electro-mechanical data storage device that stores and retrieves digital data using magnetic storage and one or more rigid rapidly rotating platters coated with magnetic material. ",
+        "img": "https://www.esus-it.com/eng_pl_Hard-Disc-Drive-dedicated-for-HP-server-2-5-capacity-300GB-15000RPM-HDD-SAS-12Gb-s-870792-001-RFB-REFURBISHED-37639_1.jpg",
+        "Quantity":"13",
+        "Supplier":"Kapadia Saha",
+        "sale": 0,
+        "Minimun-Order":15
+    },
+    {
+        
+        "name": "Monitor",
+        "price": "$10000",
+        "description": "A computer monitor is an output device that displays information in pictorial or text form. A monitor usually comprises a visual display, some circuitry, a casing, and a power supply.",
+        "img": "https://5.imimg.com/data5/RD/CG/MY-5424643/15-inch-laptop-display-500x500.jpg",
+        "Quantity":"17",
+        "Supplier":"James Whill",
+        "sale": 0,
+        "Minimun-Order":11
+    },
+    {
+        
+        "name": "Keyboard",
+        "price": "$3000",
+        "description": "A computer keyboard is a peripheral input device modeled after the typewriter keyboard[1] which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/97/Keyboard_Construction.JPG",
+        "Quantity":"19",
+        "Supplier":"Gokhale Alom",
+        "sale": 0,
+        "Minimun-Order":15
+    },
+    {
+        
+        "name": "Camera",
+        "price": "$10000",
+        "description": "A webcam is a video camera that feeds or streams an image or video in real time to or through a computer network, such as the Internet. Webcams are typically small cameras that sit on a desk, attach to a user's monitor, or are built into the hardware. ",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sweex_USB_webcam_PCB_with_without_lens_close_up.jpg/225px-Sweex_USB_webcam_PCB_with_without_lens_close_up.jpg",
+        "Quantity":"5",
+        "Supplier":"Acharya Islam",
+        "sale": 0,
+        "Minimun-Order":20
+    },
+    {
+        
+        "name": "Optical Driver",
+        "price": "$300",
+        "description": "In computing, an optical disc drive (ODD) is a disc drive that uses laser light or electromagnetic waves within or near the visible light spectrum as part of the process of reading or writing data to or from optical discs.",
+        "img": "https://www.lifewire.com/thmb/gTp8YMWJE7gapkl5p_lLNnPA4hk=/1002x564/smart/filters:no_upscale()/drw-24b1st-optical-drive-58597ea13df78ce2c34abd71.PNG",
+        "Quantity":"10",
+        "Supplier":"Laghari Roy",
+        "sale": 0,
+        "Minimun-Order":17
+    }
+]

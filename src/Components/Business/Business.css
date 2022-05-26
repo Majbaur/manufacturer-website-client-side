@@ -1,0 +1,19 @@
+
+    .Business{
+        background-image: url(../Image/background.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .line{
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+    .ions{
+        display: flex;
+
+       }
+       .fa-solid{
+           padding-left: 100px;
+           width: 350px;
+           height: 50px;
+       }
